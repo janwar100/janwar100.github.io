@@ -1,8 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html>		<!--Jest to główny index w którym zamieszczone są odwłoania do pozstałych indeksów z plikami HTML, CSS oraz PHP-->
+<html>			
+
+<head>
+  	<meta charset="utf-8" />  										<!--Wywołanie polskich znaków-->
+	<link href="Style_index.css" type="text/css" rel="stylesheet">	<!--Odwołanie do pliku CSS-->
+  	<title>Strona dyplomowa</title>
+</head>
+	
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<h2>Some changes2</h2>
+
+	<div class="nawigacja">
+		<nav> 														<!--Odwołania na danej stronie-->
+			<a href="#cel_pracy_mgr">Cel pracy i zastosowanie strony</a>								
+			<a href="#bibliografia">Bibliografia i dodatkowe materiały</a>
+		</nav>			
+	</div>
+	
+  	<div class="introduction">										<!--Nagłówek na każdej stronce-->
+	
+		<h1 id="tytul">Projekt strunobetonowych płyt HC</h1>
+ 		<p>Niniejsza strona internetowa jest poświecona mojej pracy magisterskiej,
+		dyplomowanej na Politechnice Krakowskiej na Katedrze Technologii Infromatycznych w Inżynierii L-10.</p>
+ 	
+		<ul class="odnosnik">										<!--Przejście pomiędzy na stronami na każdej taki sam-->
+			<li><a href="./index.php">Cel pracy i zastosowanie strony</a></li>
+			<li><a href="./technologia.php">Technologia i produkcja</a></li>
+			<li><a href="./panel_wyboru.php">Przystąp do projektu płyty HC</a></li>
+		</ul>
+		
+    </div> 
+	
+	<div id="wstep">
+	
+		<h2 class="podtytul">O autorze</h2> 
+		<p>Nazywam się Jan Warisch i jestem autorem tej strony internetowej. Powstała ona w ramach mojej pracy magisterskiej, 
+		pisanej i bronionej na Politechnice Krakowskiej na kierunku Budownictwo na Katedrze Technologii Informatycznych w Inżynierii L-10.
+		Promotorem mojej pracy jest <a href="https://www.l5.pk.edu.pl/~mtekieli/">dr inż. Marcin Tekieli</a>.</p>
+	
+	</div>
+
+  	<div id="cel_pracy_mgr">										<!--Wyjaśnienie celu i zakresu pracy magisterskiej-->
+		
+		<h2 class="podtytul">Cel pracy dyplomowej</h2> 		
+		<p>
+		Celem pracy jest stworzenie aplikacji do obliczania prefabrykowanych, strunobetonowych płyt HC przy użyciu języka programowania PHP oraz obsługującej ją interaktynwej strony internetowej  napisanej w języku HTML oraz CSS. Głównym zadaniem aplikacji jest 
+		wykonanie obliczeń potrzebnych do wyznaczenia stanów granicznych płyty HC na etapie produkcji zgodnie z obowiązującą normą Eurokod 2. Ogólnodostępna strona ma służyć projektantowi jako narzędzie do wykonywania szybkich obliczeń w celu przyspieszenia pracy oraz ułatwienia porównywania
+		wiele wariantów projektu, służąc tym samym jego optymalizacji. Domyślne przystosowanie aplikacji zostało stworzone pod prace badawcze nad sprężonymi płytami stropowymi, lecz istnieje możliwość poszerzenia jego zakresu stosowania przez rozbudowę kodu PHP.  
+		Aplikacja wykonuje obliczenia stanów granicznych nośności i użytkowalności płyt z uwzględnieniem wszystkich zjawisk występujących w trakcie fabrykacji płyt do czasu ich cięcia powodującego doraźne wygięcie.
+		Dodatkowo, strona internetowa ma charakter edukacyjny. Zawiera uaktualniane informacje o technologii prefabrykacji strunobetownowych płyt HC, sposobie ich wykonywania oraz zastosowaniu.  
+		</p>
+		
+		<h2 class="podtytul">Idea stosowania silnika obsługiwanego online</h2> 	
+		<p>
+		Program wykorzystuje silnik obliczeniowy, który został napisany w języku PHP i jest obsługiwany przez interfejs zamieszczony na stronie internetowej. Cały etap projektowania wymaga od użytkowniak wyłącznie doboru poszczególnych danych materiałowych, geometrycznych oraz warunków brzegowych. 
+		W kodzie są zawarte domyślne wartości z tabel normowych dla klas betonu, cementu oraz stali.
+		W domyśle, aplikacja wykonuję obliczenia dla aktualnie obowiązujących norm, jednak w domyśle, sposób rozbicia kodu na pojedyńcze funkcję, pozwala na łatwą zmianę stosowanych wzorów bądź wartości. 
+		</p>
+		
+    </div> 
+
+	<div id="sciany_tekstu">
+
+		<h2 class="podtytul">Dlaczego konstrukcje sprężone?</h2>
+
+		<p>Tradycyjne konstrukcje żelbetowe przy elementach o rozpiętości do 7 m pozwalają na spełnienie wymogów stanów granicznych nośności i użytkowalności przy ekonomicznym zużyciu materiału. 
+		Przy projektowaniu konstrukcji o większych rozpiętościach, ze względu na przyrost wartości momentów zginających w przekroju do potęgi drugiej oraz przyrost ugięć w potędze czwartej względem rozpiętości, stosowanie konstrukcji żelbetowych staje się nieekonomiczne. 
+		Drugim problemem w technologii betonu monolitycznego jest duży nakład pracy, który z obecnym, dużym deficytem pracowników fizycznych wiąże się ze znacznym wzrostem kosztów oraz czasu wykonania. Z tego powodu technologia monolityczna coraz częściej ustępuje technologii prefabrykacji.
+		Sposobem na zwiększenie nośności elementu betonowego bez zwiększania jego wysokości i tym samym objętości materiału, jest wprowadzenie wstępnych sił ściskających. Powstałe naprężenie ściskające w przekroju zarówno może zwiększyć nośność na zginanie elementu jak i zapobiega powstaniu nadmiernego ugięcia. 
+		Rozwiązaniem obydwu kwestii są elementy prefabrykowane, strunobetonowe. Jednym z najpowszechniejszych sprężanych elementów prefabrykowanych są kanałowe strunobetonowe płyty HC. Sprawdziły się one w zastosowaniu, jako płyty stropowe w budownictwie mieszkaniowym oraz przemysłowym przy rozpiętościach nawet do 20 m.
+		</p>
+
+		<p>Powodem dla którego postawiłem napisać aplikację do projektowania strunobetonowych płyt HC, jest mnogość funkcji oraz zależności liczonych przy tego typu elementów. Zaczynająć od podstarzenia betonu przez nagrzewanie w początkowym stadium aż po funkcje reologiczne, co pozwala na przetestowania języka PHP do takich celów. 
+		Sam język PHP, będący językiem prostym do nauki językiem, stworzonym pod współpracę z HTML, którego możliwości całkowicie wystarczały do zakresu obliczeń aplikacji. HTML oraz CSS są powszechnie wykorzystywanymi językami programowania w porjektowaniu stron internetowych. 
+		Istnieje obecnie wiele języków programowania, które stale są rozwijane. Wiele z nich z sukcesem mogło by usprawnić powstałą stronę internetową i obsługującą aplikację, takie języki jak: JavaScript, Java, Phyton oraz wiele innych.
+		</p>
+
+	</div> 
+		
+	<br>
+
+	<div id="bibliografia">
+
+		<h2 class="podtytul">Bibliografia</h2>
+
+		<ol>
+			<li>Andrzej Ajdukiewicz, Jakub Mames, „Betonowe Konstrukcje sprężone”, Wydawnictwo Politechniki Śląskiej, Gliwice 2001</li>
+			<li>Praca zbiorowa, red. Kanuff M.:Podstawy projetkowania konstrukcji żelbetowych I sprężonych według Eurokodu 2, Sekcja Konstukcji Betonowych KILiW PAN, Dolnośląskie Wydawnictwo Edukacyjne,Wrocław 2006</li>
+			<li>Grzegorz Adamczewski, Piotr Woyciechowski, CONSOLIS katalog „Prebabrykacja – jakoś, trwałość, różnorodność. Zeszyt 1”</li>
+			<li>Grzegorz Troszczyński, „Wytyczne projektowania stropów z płyt sprężonych HC”, Poradnik projektanta, Wydanie czwarte, luty 2017</li>
+			<li>Józef Sieczkowski, „Przykłady obliczeń konstrukcji żelbetowych i z betonu sprężonego”, Wydawnictwo Szkolne i Pedagogoczne, Warszawa 1974</li>
+			<li>PN-EN 1168:2011 Prefabrykaty z betonu – Płyty kanałowe</li>
+			<li>PN-EN 1992-1-1:2004 Eurokod 2: Projektowanie konstrukcji z betonu.Część 1-1: Reguły ogólne I reguły dla budynków</li>
+			<li>PN-EN 1992-1-1:2004 Eurokod 2: Projektowanie konstrukcji z betonu.Część 1-2: Reguły ogólne I reugły dla budynków</li>
+			<li>PN-EN 1990:2004 Eurokod: Podstawy projektowania konstrukcji</li>
+			<li>Prefabex, katalog „Tolerancje i standardy produkcji płyt kanałowych HC oraz pełnych HM w zakładzie prefabrykacji Pekabex”</li>
+			<li>Wit Derkowski, "Wpływ nadbetonu na pracę sprężonych płyt stropowych HC na podporach podatnych"</li>
+			<li>Krystian Tylek „Czynniki wpływające na rozkład naprężeń od sprężenia w płytach strunobetonowych”</li>			
+			<li>Seruga A., Jaromska E., 2012, „Długość transmisji siły sprężającej w płytowych elementach strunobetonowych”, Czasopismo Techniczne, Wydawnictwo Politechniki Krakowskiej, Zeszyt 21, s. 75-102.</li>			
+			<li><a href="https://www.codecademy.com/learn">www.codecademy.com</a></li>
+			<li>Jon Duckett „HTML i CSS. Zaprojektuj i zbuduj witrynę WWW. Podręcznik Front-End Developera”, wydawnictwo Helion</li>				
+		</ol>
+	</div>
+	
+	<div class="obraz_koniec">
+	
+	</div>
+
+	
+
 </body>
 </html>
