@@ -15,5 +15,9 @@ h1, h2, p, ul, ol, li {
 }
 .introduction {
     text-align: center;
-    font-size: 25px;
+    font-size: 19px;
+}
+.greetings {
+    text-align: center;
+    font-size: 15px;
 }
