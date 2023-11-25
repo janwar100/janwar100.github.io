@@ -1,6 +1,18 @@
 body {
-	background-color: rgb(129, 170, 187);
-	margin: 5;
-	padding: 5;
-	
+	background-color: rgb(197, 233, 248);
+	margin: 0;
+	padding: 0;	
+}
+* {
+	box-sizing: border-box;
+}
+h1, h2, p, ul, ol, li {
+	width: auto;
+	font-family: Verdana;
+	padding: 10px 45px;
+	min-width: 400px;
+
+}
+.introduction {
+    text-align: center;
 }
