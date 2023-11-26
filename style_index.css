@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(197, 233, 248);
+	background-color: rgb(225, 240, 247);
 	margin: 0;
 	padding: 0;	
 }
@@ -20,4 +20,17 @@ h1, h2, p, ul, ol, li {
 .introduction {
     text-align: center;
     font-size: 18px;
+	padding: 10px 10px;
+}
+.head {
+    text-align: left;
+    font-size: 15px;
+}
+.list_of_skills {
+    text-align: left;
+    font-size: 15px;
+}
+.my_list_of_skills {
+    text-align: left;
+    font-size: 15px;	
 }
