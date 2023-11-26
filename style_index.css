@@ -9,7 +9,7 @@ body {
 h1, h2, p, ul, ol, li {
 	width: auto;
 	font-family: Verdana;
-	padding: 10px 35px;
+	padding: 14px 30px;
 	min-width: 400px;
 
 }
@@ -29,8 +29,5 @@ h1, h2, p, ul, ol, li {
 .list_of_skills {
     text-align: left;
     font-size: 15px;
-}
-.my_list_of_skills {
-    text-align: left;
-    font-size: 15px;	
+	padding: 10px 20px;
 }
