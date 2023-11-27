@@ -17,23 +17,24 @@ h1, h2, p, ul, ol, li {
     text-align: center;
     font-size: 20px;
 	font-style: italic;
-	color:  rgb(4, 4, 77);
+	color:  rgb(49, 49, 124);
 }
 .navigation {
     text-align: left;
     font-size: 15px;
-	opacity: 90%;
+	opacity: 67%;
 	width: auto;
+	position: fixed;
 	background-color:  rgb(65, 65, 94);
 	background-size: auto;
-	padding: 12px 10px;
+	padding: 12px 50px;
 }
 .introduction {
     text-align: justify;
     font-size: 18px;
 	padding: 10px 10px;
 }
-.head {
+#head {
     text-align: left;
     font-size: 25px;
 }
